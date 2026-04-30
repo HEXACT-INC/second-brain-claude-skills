@@ -28,7 +28,13 @@ Each skill has its own README explaining what it does, example prompts, and any 
 
 
 
-*More coming. See [Contributing](#contributing) to add yours.*
+- `second-brain` - default safe KB access skill (schema-first read/write workflow)
+- `weekly-review` - weekly summary of what you captured in the last 7 days
+- `meeting-prep` - pre-call brief for a person or company
+- `save-and-categorize` - smart capture flow for "save this" requests
+- `quick-lookup` - synthesis answer for "what do I know about X?" queries
+
+See [`skills/`](skills/) for each skill's `SKILL.md` and `README.md`.
 
 ## Skill structure
 
