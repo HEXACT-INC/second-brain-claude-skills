@@ -1,6 +1,6 @@
 # Weekly Review
 
-Create a Monday-style recap of what happened in your Second Brain in the last 7 days.
+Create a Monday-style recap of what happened in your Second Brain in the last 14 days.
 
 ## Prerequisite
 
