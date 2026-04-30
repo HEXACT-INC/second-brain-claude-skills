@@ -26,7 +26,7 @@ Example: a "weekly review" skill that pulls your recent notes, meetings, and sav
 
 ### Option B, install from the UI
 
-1. In Claude Desktop, open `Settings`, then go to `Customize` (skills moved there).
+1. In Claude Desktop, open `Settings`, then go to `Capabilities` then `Customize` (skills moved there).
 2. In `Customize` > `Skills`, click the `+` button.
 3. Select `Upload a skill`.
 4. Choose the skill folder from this repo (the folder that contains `SKILL.md`).
