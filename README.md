@@ -17,10 +17,23 @@ Example: a "weekly review" skill that pulls your recent notes, meetings, and sav
 
 ## How to use
 
+### Option A, install manually
+
 1. Browse the `/skills` folder in this repo
 2. Download the skill folder you want
 3. Paste it into `~/.claude/skills/` (each skill gets its own subfolder with a `SKILL.md` inside)
 4. Restart Claude. It will pick up the new skill automatically.
+
+### Option B, install from the UI
+
+1. In Claude Desktop, open `Settings`, then go to `Customize` (skills moved there).
+2. In `Customize` > `Skills`, click the `+` button.
+3. Select `Upload a skill`.
+4. Choose the skill folder from this repo (the folder that contains `SKILL.md`).
+
+![Skills moved to Customize](assets/skills-moved-to-customize.png)
+
+![Upload a skill from Customize](assets/upload-skill-from-customize.png)
 
 Each skill has its own README explaining what it does, example prompts, and any KB structure it expects.
 
