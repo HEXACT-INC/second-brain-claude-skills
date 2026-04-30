@@ -22,11 +22,14 @@ Return these sections in order:
 1. `WhatCaptured` (3-8 bullets)
 2. `KeyThemes` (2-5 bullets)
 3. `OpenLoops` (0-5 bullets, write "None" if empty)
-4. `NextWeekFocus` (2-4 bullets)
+4. `BusinessImpact` (top 1-3 implications)
+5. `Top3Actions` (specific next steps)
+6. `NextWeekFocus` (2-4 bullets)
 
 ## Rules
 
 - Keep the whole review short and practical.
+- Keep to 220 words max unless the user asks for more detail.
 - Do not dump raw rows unless asked.
-- If data is sparse, say what is missing and still provide a useful recap.
+- If data is sparse, return a one-line status and 3 suggested capture prompts.
 - Inherit all safety and write rules from `second-brain`.

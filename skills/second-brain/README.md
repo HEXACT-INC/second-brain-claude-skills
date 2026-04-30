@@ -25,9 +25,16 @@ Use this as the baseline skill whenever the user asks about stored personal KB d
 - It does not export files unless explicitly requested.
 - It does not invent fields, tables, or values.
 
+## Decision Safety
+
+- Every read response should include confidence and what it is based on.
+- Every important conclusion should be traceable to concrete KB entities.
+- Every write requires explicit user intent, and business-impact writes
+  should be previewed before execution.
+
 ## Example prompts
 
-- "Show me how many contacts I have by country."
-- "Find all notes that mention Stripe this month."
-- "Update this contact's status to active."
-- "Delete records from table X where Y." (with explicit filter confirmation)
+- "Show me how many contacts I have by country"
+- "Find all notes that mention Stripe this month"
+- "Update this contact's status to active"
+- "Delete records from table X where Y" (with explicit filter confirmation)

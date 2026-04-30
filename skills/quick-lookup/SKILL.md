@@ -18,13 +18,16 @@ Provide a short, useful synthesis across KB sources.
 
 Return these sections:
 
-1. `WhatKnown` (concise synthesis)
-2. `Evidence` (key supporting items, short list)
-3. `UncertainOrMissing` (gaps, conflicts, unknowns)
+1. `ExecutiveSummary` (2-4 lines)
+2. `WhatKnown` (concise synthesis)
+3. `Evidence` (key supporting items with timestamps when available)
+4. `DecisionUse` (how this can be used now)
+5. `UncertainOrMissing` (gaps, conflicts, unknowns)
 
 ## Rules
 
 - Do not return raw SQL output unless explicitly requested.
 - Prefer synthesis over chronology unless the user asks for a timeline.
-- If there are multiple entities matching X, ask which one they mean.
+- If there are multiple entities matching X, return top matches with a
+  short disambiguation question before final synthesis.
 - Inherit all safety and write rules from `second-brain`.

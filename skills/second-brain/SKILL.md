@@ -51,14 +51,26 @@ on demand and it talks to one SQLite file.
 2. Pick the smallest query that answers the question. Prefer explicit
    column lists over `SELECT *`. Parameterize values. Never concatenate
    user-supplied strings into SQL.
-3. Summarize results as short prose by default. Switch to a table or a
+3. Use a query budget for read tasks: run the minimum query first, then
+   run at most one follow-up query if confidence is still not sufficient.
+   If confidence remains low, stop and report uncertainty clearly.
+4. Summarize results as short prose by default. Switch to a table or a
    code block only when the user asks for one, or when more than a
    handful of rows are involved.
-4. Before any write, restate the exact row(s) you are about to change
+5. For read results, include this footer:
+   - `Confidence`: High | Medium | Low
+   - `BasedOn`: tables or entities used
+   - `MissingData`: what would improve the answer
+6. Before any write, restate the exact row(s) you are about to change
    and wait for confirmation, unless the user's latest message was
    already an explicit write instruction such as "add X with fields Y",
    "delete row N", or "update row N to Z".
-5. Do not bulk-delete. If the user asks to delete, require them to name
+7. For writes with business impact, show a compact mutation checklist
+   before execution:
+   - target table and row filter
+   - columns being changed
+   - new values
+8. Do not bulk-delete. If the user asks to delete, require them to name
    the table and the filter, and repeat the filter back before
    executing.
 

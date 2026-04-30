@@ -17,29 +17,48 @@ Example: a "weekly review" skill that pulls your recent notes, meetings, and sav
 
 ## How to use
 
-### Option A, install manually
+### Option A: Install manually
 
 1. Browse the `/skills` folder in this repo
 2. Download the skill folder you want
 3. Paste it into `~/.claude/skills/` (each skill gets its own subfolder with a `SKILL.md` inside)
 4. Restart Claude. It will pick up the new skill automatically.
+5. Install `second-brain` first, then add specialized skills.
 
-### Option B, install from the UI
+### Option B: Install from the UI
 
-1. In Claude Desktop, open `Settings`, then go to `Capabilities` then `Customize` (skills moved there).
+1. In Claude Desktop, open `Settings` -> `Capabilities` -> `Customize` (skills moved there).
 2. In `Customize` > `Skills`, click the `+` button.
 3. Select `Upload a skill`.
 4. Choose the skill folder from this repo (the folder that contains `SKILL.md`).
+5. Install `second-brain` first, then add specialized skills.
 
 ![Skills moved to Customize](assets/skills-moved-to-customize.png)
 
 ![Upload a skill from Customize](assets/upload-skill-from-customize.png)
 
+Important: upload the whole skill folder, not just `SKILL.md`.
+
 Each skill has its own README explaining what it does, example prompts, and any KB structure it expects.
 
+## Fast start (5 minutes)
+
+1. Install `second-brain`.
+2. Install `quick-lookup`.
+3. Try these prompts:
+   - "What do I know about <person/company>?"
+   - "What do I know before signing this deal?"
+   - "Give me a quick weekly review"
+
+## Who this is for
+
+- Business owners
+- Solopreneurs
+- Investors
+- Real estate professionals
+- Entrepreneurs
+
 ## Available skills
-
-
 
 - `second-brain` - default safe KB access skill (schema-first read/write workflow)
 - `weekly-review` - weekly summary of what you captured in the last 7 days

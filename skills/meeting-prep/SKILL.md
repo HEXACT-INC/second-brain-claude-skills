@@ -18,15 +18,21 @@ Produce a compact meeting brief from KB data.
 
 Return these sections in order:
 
-1. `WhoTheyAre` (identity and role context)
-2. `RecentInteractions` (last touchpoints)
-3. `ContextSignals` (important notes, risk/opportunity signals)
-4. `SuggestedAgenda` (3-6 items)
-5. `QuestionsToAsk` (3-7 items)
+1. `MeetingObjective` (single sentence)
+2. `WhoTheyAre` (identity and role context)
+3. `RecentInteractions` (last touchpoints)
+4. `ContextSignals` (important notes, risk/opportunity signals)
+5. `NegotiationLevers` (only if relevant)
+6. `RiskFlags` (max 3)
+7. `DesiredOutcome` (binary success condition)
+8. `SuggestedAgenda` (3-6 items)
+9. `QuestionsToAsk` (3-7 items)
 
 ## Rules
 
 - Prioritize recent and high-confidence signals.
-- If the person or company match is ambiguous, ask a disambiguation question.
+- If the person or company match is ambiguous, force disambiguation
+  before creating the brief.
+- Keep non-agenda and non-question content to 8 bullets max.
 - Keep it brief enough to read in under 2 minutes.
 - Inherit all safety and write rules from `second-brain`.
