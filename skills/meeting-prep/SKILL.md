@@ -1,6 +1,6 @@
 ---
 name: meeting-prep
-description: Build a pre-meeting brief by pulling known context about a person or company from the Second Brain KB. Use when the user asks to prepare for a call, meeting, intro, or check-in.
+description: Create a pre-meeting brief by gathering known context about a person or company from the Second Brain knowledge base. Use this when the user wants to prepare for a call, meeting, introduction, or check-in.
 ---
 
 # Meeting Prep
