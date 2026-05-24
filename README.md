@@ -31,7 +31,7 @@ Example: a "weekly review" skill that pulls your recent notes, meetings, and sav
 2. In `Customize` > `Skills`, click the `+` button.
 3. Select `Upload a skill`.
 4. Choose the skill folder from this repo (the folder that contains `SKILL.md`).
-5. Install `second-brain` first, then add specialized skills.
+5. Add `second-brain` first, then add specialized skills.
 
 ![Skills moved to Customize](assets/skills-moved-to-customize.png)
 
@@ -41,14 +41,6 @@ Important: upload the whole skill folder, not just `SKILL.md`.
 
 Each skill has its own README explaining what it does, example prompts, and any KB structure it expects.
 
-## Fast start (5 minutes)
-
-1. Install `second-brain`.
-2. Install `quick-lookup`.
-3. Try these prompts:
-   - "What do I know about <person/company>?"
-   - "What do I know before signing this deal?"
-   - "Give me a quick weekly review"
 
 ## Who this is for
 
